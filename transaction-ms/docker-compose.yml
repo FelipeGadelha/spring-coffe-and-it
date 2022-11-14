@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  db:
+    image: mongo:4.2
+    container_name: mg-transaction-db
+    environment:
+      - MONGO_INITDB_DATABASE=transaction-db
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin
+    ports:
+      - "27017:27017"
+    volumes:
+      - .docker/dev_data:/var/lib/postgresql
+#volumes:
+#  dev_data:

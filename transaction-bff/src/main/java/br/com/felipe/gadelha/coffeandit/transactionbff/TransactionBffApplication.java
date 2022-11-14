@@ -9,7 +9,5 @@ import reactor.blockhound.BlockHound;
 @EnableRedisRepositories
 public class TransactionBffApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(TransactionBffApplication.class, args);
-	}
+	public static void main(String[] args) { SpringApplication.run(TransactionBffApplication.class, args); }
 }

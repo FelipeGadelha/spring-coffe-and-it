@@ -11,6 +11,8 @@ import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.RedisSerializationContext;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
+import java.util.Optional;
+
 @Configuration
 public class RedisConfig {
 
@@ -36,7 +38,6 @@ public class RedisConfig {
         RedisSerializationContext<String, Transaction> context = builder
             .value(serializer)
             .build();
-
         return new ReactiveRedisTemplate<>(factory, context);
     }
 }

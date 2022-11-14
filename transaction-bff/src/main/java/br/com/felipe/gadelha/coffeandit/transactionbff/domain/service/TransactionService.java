@@ -38,7 +38,7 @@ public class TransactionService {
 
     public Mono<Transaction> save(final Transaction transaction) {
         return transactionRepository.save(transaction)
-                .flatMap(t -> Mono.just(transaction));
+            .flatMap(t -> Mono.just(transaction));
     }
 
     public Flux<Transaction> findAll() { return transactionRepository.findAll(); }

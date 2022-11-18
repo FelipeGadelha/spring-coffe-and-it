@@ -35,8 +35,8 @@ public class LimitService {
             var reactiveCircuitBreaker = reactiveCircuitBreakerFactory
                 .create("limitsSearchBasedOnTime");
             return reactiveCircuitBreaker.run(it, Throwable ->
-                Mono.just(DailyLimit
-                    .builder()
+                Mono.just(
+                    DailyLimit.builder()
                     .id(1L)
                     .agency("001")
                     .account("0001")

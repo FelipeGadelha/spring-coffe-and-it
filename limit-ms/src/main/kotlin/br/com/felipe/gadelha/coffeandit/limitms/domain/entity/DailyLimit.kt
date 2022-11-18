@@ -2,6 +2,7 @@ package br.com.felipe.gadelha.coffeandit.limitms.domain.entity
 
 import java.math.BigDecimal
 import java.time.LocalDate
+import java.time.LocalDateTime
 import java.util.Objects
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
@@ -16,7 +17,7 @@ data class DailyLimit(
     var id: Long? = null,
     val agency: String,
     val account: String,
-    val date: LocalDate,
+    val date: LocalDateTime,
     val value: BigDecimal
 ) {
     fun update(updated: DailyLimit) = DailyLimit(

@@ -10,6 +10,6 @@ services:
     ports:
       - "27018:27017"
     volumes:
-      - .docker/dev_data:/var/lib/postgresql
+      - .docker/dev_data:/var/lib/mongo
 #volumes:
 #  dev_data:

@@ -29,6 +29,7 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	implementation("org.springdoc:springdoc-openapi-ui:1.6.9")
 	implementation("org.flywaydb:flyway-core")
+	implementation("org.springframework.kafka:spring-kafka")
 }
 
 //var dsUrl: String = System.getenv("SPRING_DATASOURCE_URL")

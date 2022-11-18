@@ -6,19 +6,12 @@ server:
 #  servlet:
 #    context-path: /api/limit
 spring:
-  #  servlet:
-  #    multipart:
-  #      max-file-size: 20KB
-  #      max-request-size: 20MB
+  application:
+    name: limit-ms
   jackson:
-    #    property-naming-strategy: SNAKE_CASE
     deserialization:
       fail-on-unknown-properties: true
       fail-on-ignored-properties: true
-  #  data:
-  #    jpa:
-  #      repositories:
-  #        enabled: true
   web:
     resources:
       add-mappings: false
@@ -29,5 +22,4 @@ spring:
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
-
 limit.value: 2000

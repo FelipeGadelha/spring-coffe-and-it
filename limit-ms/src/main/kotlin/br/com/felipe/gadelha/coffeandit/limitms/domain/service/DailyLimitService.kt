@@ -4,7 +4,7 @@ import br.com.felipe.gadelha.coffeandit.limitms.domain.entity.DailyLimit
 import br.com.felipe.gadelha.coffeandit.limitms.domain.entity.Transaction
 import br.com.felipe.gadelha.coffeandit.limitms.domain.exception.EntityNotFoundException
 import br.com.felipe.gadelha.coffeandit.limitms.domain.repository.DailyLimitRepository
-import br.com.felipe.gadelha.coffeandit.limitms.infra.events.LimitProducer
+import br.com.felipe.gadelha.coffeandit.limitms.infra.event.LimitProducer
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Value

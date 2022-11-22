@@ -1,4 +1,4 @@
-package br.com.felipe.gadelha.coffeandit.limitms.infra.events
+package br.com.felipe.gadelha.coffeandit.limitms.infra.event
 
 import br.com.felipe.gadelha.coffeandit.limitms.domain.entity.Transaction
 import br.com.felipe.gadelha.coffeandit.limitms.domain.service.DailyLimitService

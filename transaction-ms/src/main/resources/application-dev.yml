@@ -3,3 +3,14 @@ spring:
     mongodb:
       uri: mongodb://admin:admin@localhost:27018
       database: transaction-db
+  kafka:
+    consumer:
+      group-id: ${spring.application.name}
+      key-serializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-serializer: org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: latest
+      enable-auto-commit: true
+    bootstrap-servers: localhost:9092
+events:
+  consumeTopic: transaction
+  returnTopic: transaction_refund

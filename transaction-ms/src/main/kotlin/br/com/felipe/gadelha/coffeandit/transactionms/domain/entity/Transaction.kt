@@ -13,7 +13,16 @@ data class Transaction(
     val account: Account,
     val beneficiary: Beneficiary,
     val transactionType: TransactionType,
-    val transactionStatus: TransactionStatus
+    var transactionStatus: TransactionStatus?
 ) {
+
+
+    fun getAgency() = this.account.agency
+    fun getAccountId() = this.account.id.toString()
+    fun suspectedFraud() { this.transactionStatus = TransactionStatus.IN_SUSPECTED_FRAUD }
+    fun notAnalyzed() { this.transactionStatus = TransactionStatus.NOT_ANALYSED }
+    fun humanAnalysis() { this.transactionStatus = TransactionStatus.IN_HUMAN_ANALYSIS }
+    fun analyzed() { this.transactionStatus = TransactionStatus.ANALYSED }
+    fun isAnalyzed(): Boolean = this.transactionStatus == TransactionStatus.ANALYSED
 
 }

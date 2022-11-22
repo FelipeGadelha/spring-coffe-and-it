@@ -27,6 +27,7 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
 	implementation("org.springdoc:springdoc-openapi-webflux-ui:1.6.11")
+	implementation("org.springframework.kafka:spring-kafka")
 }
 
 tasks.withType<KotlinCompile> {

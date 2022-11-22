@@ -7,6 +7,8 @@ server:
 #  servlet:
 #    context-path: /api/limit
 spring:
+  application:
+    name: transaction-ms
   #  servlet:
   #    multipart:
   #      max-file-size: 20KB
